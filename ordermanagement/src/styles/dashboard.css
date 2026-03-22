@@ -1,0 +1,66 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* CARDS GRID */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* COLORS */
+
+.revenue {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.paid {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.unpaid {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* CHART */
+
+.chart-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .card p {
+    font-size: 22px;
+  }
+}

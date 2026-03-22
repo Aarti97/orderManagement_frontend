@@ -1,0 +1,307 @@
+/* ================= CONTAINER ================= */
+.customer-container {
+   padding:20px;
+  background:#f4f6f9;
+  min-height:100vh;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.customer-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.customer-header h2{
+  font-size:24px;
+}
+
+.view-btn {
+  background: #dcfce7;
+  color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.customer-header input {
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.customer-header input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.customer-header button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ================= TABLE ================= */
+
+/* TABLE */
+
+.table-wrapper{
+  overflow-x:auto;
+}
+
+.customer-table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+}
+
+.customer-table th{
+  background:#343a40;
+  color:white;
+  padding:10px;
+  text-align:left;
+}
+
+.customer-table td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+}
+
+.customer-table button{
+  padding:6px 10px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+ background:#2563eb;
+  color:white;
+}
+
+.customer-table button:hover{
+  opacity:0.9;
+}
+/* ================= ACTION BUTTONS ================= */
+.edit-btn {
+  padding:6px 10px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+ background:#2563eb;
+  color:white;
+}
+.back-btn{
+  background:#4CAF50;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+
+.back-btn:hover{
+  background:#43a047;
+}
+.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.customer-table button {
+  border: none;
+  margin-right: 6px;
+}
+
+/* ================= EMPTY ================= */
+.empty {
+  text-align: center;
+  padding: 50px;
+  color: #9ca3af;
+}
+
+/* ================= PAGINATION ================= */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+
+.pagination button:hover,
+.pagination .active-page {
+  background: #2563eb;
+  color: white;
+}
+.customer-table a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.customer-table a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/* ================= MOBILE CARDS ================= */
+.mobile-cards {
+  display: none;
+}
+
+.customer-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ================= MODAL ================= */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* FIXED (removed blue bg bug) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+/* ================= FORM ================= */
+.form-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ================= ERROR ================= */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ================= BUTTONS ================= */
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #007bff;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #0056b3;
+}
+
+.cancel-btn {
+  background: #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .customer-header input {
+    width: 100%;
+  }
+
+  .customer-table {
+    display: none;
+  }
+
+  .mobile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
