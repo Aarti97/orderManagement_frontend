@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import "../styles/sidebar.css";
+import "../styles/Sidebar.css";
 
 const Sidebar = () => {
   const { user } = useAuth();
